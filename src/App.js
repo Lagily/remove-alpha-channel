@@ -147,7 +147,7 @@ async function processFiles(files) {
     for (let fileIndex = 0; fileIndex < files.length; ++fileIndex) {
       let [fileName, content] = await ReadFile(files[fileIndex]);
       try {
-        let destFilename = fileName;
+        let destFilename = fileName + "_dest";
         let splitFiles = await window.magick.Call(
           [{ name: fileName, content: content }],
           [
@@ -160,6 +160,7 @@ async function processFiles(files) {
             destFilename
           ]
         );
+        console.log("HERE");
         processedImages.push(...splitFiles);
       } catch (e) {
         if (!failedProcessing) {
@@ -184,9 +185,10 @@ async function processFiles(files) {
       outImages.push(outImage);
     }
 
+    console.log(outImages);
     if (outImages.length > 1) GenerateZip(outImages);
     else if (outImages.length === 1) {
-      saveAs(outImages[0].wasmResponse.blob, outImages[0].name);
+      saveAs(outImages[0].wasmResponse.blob, outImages[0].name.replace("_dest", ""));
     }
   }
 }
