@@ -6,7 +6,6 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background: linear-gradient(to top, #4F6072, #8699AA);
   display: flex;
   justify-content: center;
@@ -29,7 +28,7 @@ body {
   opacity: 0;
 }
 .upload .upload-files header {
-  background: #4db6ac;
+  background: #224844;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   text-align: center;
@@ -90,10 +89,10 @@ body {
 }
 .upload .upload-files .body p b,
 .upload .upload-files .body p a {
-  color: #4db6ac;
+  color: #224844;
 }
 .upload .upload-files .body.active {
-  border: dashed 2px #4db6ac;
+  border: dashed 2px #224844;
 }
 .upload .upload-files .body.active i {
   box-shadow: 0 0 0 -3px #fff, 0 0 0 lightgray, 0 0 0 -3px #fff, 0 0 0 lightgray;
@@ -232,7 +231,7 @@ body {
   position: relative;
 }
 .upload .upload-files footer .list-files .file .done:before {
-  content: "View";
+  content: "Done!";
   position: absolute;
   top: 0;
   left: -5px;
@@ -310,13 +309,12 @@ body {
   right: 0;
   bottom: 20px;
   margin: auto;
-  border: solid 1px #4db6ac;
-  color: #4db6ac;
+  border: solid 1px #224844;
+  color: #224844;
   background: transparent;
   padding: 8px 15px;
   font-size: 12px;
   border-radius: 4px;
-  font-family: Roboto;
   line-height: 1;
   cursor: pointer;
   -webkit-transform: translateY(15px);

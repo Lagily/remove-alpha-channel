@@ -49,12 +49,13 @@ function App() {
             <span className="up">up</span>
             <span className="load">load</span>
           </p>
-          <span style={{color: "white"}}>The alpha channel of the images is removed as per iOS Apple requirements. No image is ever uploaded, the conversion takes place in your browser via <a style={{color: "white"}} target="_blank" href="https://developer.mozilla.org/en-US/docs/WebAssembly">Web Assembly</a>.</span>
+          <span style={{color: "white"}}>The alpha channel of the images is removed as per iOS Apple requirements. No image is ever uploaded, the conversion takes place in your browser via <a style={{color: "white"}} target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/WebAssembly">Web Assembly</a>.</span>
         </header>
         <div className="body" id="drop">
           <i className="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
           <p className="pointer-none">
             <b>Drag and drop</b> files here <br /> or{" "}
+            {/* eslint-disable jsx-a11y/anchor-is-valid */}
             <a href="" id="triggerFile">
               browse
             </a>{" "}
