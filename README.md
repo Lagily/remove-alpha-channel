@@ -1,4 +1,6 @@
-Practical and realistic Web Assembly use case
+https://www.removealphachannel.com/
+
+**Practical and realistic Web Assembly use case**
 
 If you are a regular tech blog reader, chances are that you have come into contact with WebAssembly (Wasm) and the hype that surrounds it. Put simply, WebAssembly is a byte code that can be executed by web browsers, which means that applications written in any language could be compiled into WebAssembly and then executed in your browser. The hype brings many quality articles and talks demonstrating use cases and advantages, such as fully coding your GUI in C++.
 
